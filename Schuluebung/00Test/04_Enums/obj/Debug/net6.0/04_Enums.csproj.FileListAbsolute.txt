@@ -1,0 +1,15 @@
+C:\dev\johannes.werner\SEW_22_23\Schuluebung\00Test\04_Enums\bin\Debug\net6.0\04_Enums.exe
+C:\dev\johannes.werner\SEW_22_23\Schuluebung\00Test\04_Enums\bin\Debug\net6.0\04_Enums.deps.json
+C:\dev\johannes.werner\SEW_22_23\Schuluebung\00Test\04_Enums\bin\Debug\net6.0\04_Enums.runtimeconfig.json
+C:\dev\johannes.werner\SEW_22_23\Schuluebung\00Test\04_Enums\bin\Debug\net6.0\04_Enums.dll
+C:\dev\johannes.werner\SEW_22_23\Schuluebung\00Test\04_Enums\bin\Debug\net6.0\04_Enums.pdb
+C:\dev\johannes.werner\SEW_22_23\Schuluebung\00Test\04_Enums\obj\Debug\net6.0\04_Enums.csproj.AssemblyReference.cache
+C:\dev\johannes.werner\SEW_22_23\Schuluebung\00Test\04_Enums\obj\Debug\net6.0\04_Enums.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\johannes.werner\SEW_22_23\Schuluebung\00Test\04_Enums\obj\Debug\net6.0\04_Enums.AssemblyInfoInputs.cache
+C:\dev\johannes.werner\SEW_22_23\Schuluebung\00Test\04_Enums\obj\Debug\net6.0\04_Enums.AssemblyInfo.cs
+C:\dev\johannes.werner\SEW_22_23\Schuluebung\00Test\04_Enums\obj\Debug\net6.0\04_Enums.csproj.CoreCompileInputs.cache
+C:\dev\johannes.werner\SEW_22_23\Schuluebung\00Test\04_Enums\obj\Debug\net6.0\04_Enums.dll
+C:\dev\johannes.werner\SEW_22_23\Schuluebung\00Test\04_Enums\obj\Debug\net6.0\refint\04_Enums.dll
+C:\dev\johannes.werner\SEW_22_23\Schuluebung\00Test\04_Enums\obj\Debug\net6.0\04_Enums.pdb
+C:\dev\johannes.werner\SEW_22_23\Schuluebung\00Test\04_Enums\obj\Debug\net6.0\04_Enums.genruntimeconfig.cache
+C:\dev\johannes.werner\SEW_22_23\Schuluebung\00Test\04_Enums\obj\Debug\net6.0\ref\04_Enums.dll
