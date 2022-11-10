@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\johannes.werner\\SEW_22_23\\Schuluebung\\00Test\\00Test\\00Test.csproj",
-      "projectName": "00Test",
-      "projectPath": "C:\\dev\\johannes.werner\\SEW_22_23\\Schuluebung\\00Test\\00Test\\00Test.csproj",
+      "projectUniqueName": "C:\\dev\\johannes.werner\\SEW_22_23\\Schuluebung\\01_NullableDatatypes\\01_NullableDatatypes\\01_NullableDatatypes.csproj",
+      "projectName": "01_NullableDatatypes",
+      "projectPath": "C:\\dev\\johannes.werner\\SEW_22_23\\Schuluebung\\01_NullableDatatypes\\01_NullableDatatypes\\01_NullableDatatypes.csproj",
       "packagesPath": "C:\\Users\\johannes.werner\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\johannes.werner\\SEW_22_23\\Schuluebung\\00Test\\00Test\\obj\\",
+      "outputPath": "C:\\dev\\johannes.werner\\SEW_22_23\\Schuluebung\\01_NullableDatatypes\\01_NullableDatatypes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\johannes.werner\\AppData\\Roaming\\NuGet\\NuGet.Config",
