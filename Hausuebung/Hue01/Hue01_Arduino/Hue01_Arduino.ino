@@ -1,44 +1,27 @@
 #include <SPI.h>
 #include <Ethernet.h>
+#include <EthernetUdp.h>
 #include <String.h>
-#include <dht_nonblocking.h>
-#define DHT_SENSOR_TYPE DHT_TYPE_11
+#include "DHT.h"
 
-byte mac[] = { 0x12,0x34,0x56, 0x78, 0x90, 0x22};
-static const int DHT_SENSOR_PIN = 2;
+#define DHTPIN 2
+#define DHTTYPE DHT11
+
+static byte mac[] = { 0x12,0x34,0x56, 0x78, 0x90, 0x22};
 static const int port = 8888;
-DHT_nonblocking dht_sensor( DHT_SENSOR_PIN, DHT_SENSOR_TYPE );
-EthernetServer server(port);  // 8888 --> Port
+static IPAddress ip(255, 255, 255, 255);
 
-/*
- * Poll for a measurement, keeping the state machine alive.  Returns
- * true if a measurement is available.
- */
-static bool measure_environment( float *temperature, float *humidity )
-{
-  static unsigned long measurement_timestamp = millis( );
 
-  /* Measure once every four seconds. */
-  if( millis( ) - measurement_timestamp > 3000ul )
-  {
-    if( dht_sensor.measure( temperature, humidity ) == true )
-    {
-      measurement_timestamp = millis( );
-      return( true );
-    }
-  }
-
-  return( false );
-}
+DHT dht(DHTPIN, DHTTYPE);
+EthernetUDP Udp;
 
 void setup() {
-  // Get IP
   Ethernet.init(10);
   Ethernet.begin(mac);  // IP. Gateway, Subnet, DNS vom DHCP
+  Udp.begin(port);  
   Serial.begin(9600);
   while(!Serial){
     // warten bis der serielle Kommunikationspartner verfügbar
-    
   }
 
   // Fehlerbehandlung
@@ -51,24 +34,23 @@ void setup() {
   if(Ethernet.linkStatus() == LinkOFF){
     Serial.println("Kein Ethernet Kabel verbunden");
   }
+  
   Serial.print("IP: ");
   Serial.println(Ethernet.localIP());
   Serial.print("Sending port: ");
-  Serial.println(port);
-
-  server.begin(); // Server horcht auf eingehende Verbindungen
+  Serial.println(port);   
 }
 
 void loop() {
-  float temperature;
-  float humidity;
+  float temperature = dht.readTemperature();
+  if (!isnan(temperature)) {
+    String message = "-temperature measurement system werner-" + String(temperature , 2) + "###";
 
-  /* Measure temperature and humidity.  If the functions returns
-     true, then a measurement is available. */
-  if( measure_environment( &temperature, &humidity ) == true )
-  {
-    Serial.print( temperature, 1 );
-    Serial.print( " deg. C\n" );
-    server.print(temperature);
+    Serial.println(message);
+    
+    Udp.beginPacket( ip, port);
+    Udp.print(message);
+    Udp.endPacket();
   }
+  delay(10000);
 }

@@ -8,6 +8,7 @@ namespace Hue01_Csharp
     {
         private UdpClient udpClient;
         private List<Measurment> measurments = new List<Measurment>();
+        private String serverIdentifier = "-temperature measurement system werner-";
 
         public Form1()
         {
@@ -33,22 +34,26 @@ namespace Hue01_Csharp
             {
                 UdpReceiveResult result = await udpClient.ReceiveAsync();
                 string value = Encoding.UTF8.GetString(result.Buffer);
-                this.tbCurrentTemperature.Text = value;
-                /*measurments.Add(new Measurment(DateTime.Now, double.Parse(value)));
-                double averageMeasurment = 0;
-                foreach (Measurment measurment in measurments)
+                if (value.Contains(serverIdentifier))
                 {
-                    if (measurment.Time.CompareTo(DateTime.Now.Subtract(new DateTime(0, 0, 0, 0, 5, 0)))<0)
+                    value = value.Substring(value.IndexOf(serverIdentifier) + serverIdentifier.Length, value.IndexOf("###") - value.IndexOf(serverIdentifier) - serverIdentifier.Length);
+                    this.tbCurrentTemperature.Text = value;
+                    /*measurments.Add(new Measurment(DateTime.Now, double.Parse(value)));
+                    double averageMeasurment = 0;
+                    foreach (Measurment measurment in measurments)
                     {
-                        measurments.Remove(measurment);
+                        if (measurment.Time.CompareTo(DateTime.Now.Subtract(new DateTime(0, 0, 0, 0, 5, 0)))<0)
+                        {
+                            measurments.Remove(measurment);
+                        }
+                        else
+                        {
+                            averageMeasurment += measurment.Value;
+                        }
                     }
-                    else
-                    {
-                        averageMeasurment += measurment.Value;
-                    }
+                    averageMeasurment = averageMeasurment/measurments.Count;
+                    this.tbAverageTemperature.Text = averageMeasurment.ToString();*/
                 }
-                averageMeasurment = averageMeasurment/measurments.Count;
-                this.tbAverageTemperature.Text = averageMeasurment.ToString();*/
             }
         }
     }

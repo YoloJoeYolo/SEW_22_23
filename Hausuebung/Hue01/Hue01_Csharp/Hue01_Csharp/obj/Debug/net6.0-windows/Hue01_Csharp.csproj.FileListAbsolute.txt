@@ -1,0 +1,17 @@
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\bin\Debug\net6.0-windows\Hue01_Csharp.exe
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\bin\Debug\net6.0-windows\Hue01_Csharp.deps.json
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\bin\Debug\net6.0-windows\Hue01_Csharp.runtimeconfig.json
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\bin\Debug\net6.0-windows\Hue01_Csharp.dll
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\bin\Debug\net6.0-windows\Hue01_Csharp.pdb
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\obj\Debug\net6.0-windows\Hue01_Csharp.csproj.AssemblyReference.cache
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\obj\Debug\net6.0-windows\Hue01_Csharp.Form1.resources
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\obj\Debug\net6.0-windows\Hue01_Csharp.csproj.GenerateResource.cache
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\obj\Debug\net6.0-windows\Hue01_Csharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\obj\Debug\net6.0-windows\Hue01_Csharp.AssemblyInfoInputs.cache
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\obj\Debug\net6.0-windows\Hue01_Csharp.AssemblyInfo.cs
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\obj\Debug\net6.0-windows\Hue01_Csharp.csproj.CoreCompileInputs.cache
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\obj\Debug\net6.0-windows\Hue01_Csharp.dll
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\obj\Debug\net6.0-windows\refint\Hue01_Csharp.dll
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\obj\Debug\net6.0-windows\Hue01_Csharp.pdb
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\obj\Debug\net6.0-windows\Hue01_Csharp.genruntimeconfig.cache
+D:\Git\SEW_22_23\Hausuebung\Hue01\Hue01_Csharp\Hue01_Csharp\obj\Debug\net6.0-windows\ref\Hue01_Csharp.dll
