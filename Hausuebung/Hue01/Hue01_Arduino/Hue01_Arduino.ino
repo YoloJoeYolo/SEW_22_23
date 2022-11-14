@@ -52,5 +52,5 @@ void loop() {
     Udp.print(message);
     Udp.endPacket();
   }
-  delay(10000);
+  delay(3000);
 }
