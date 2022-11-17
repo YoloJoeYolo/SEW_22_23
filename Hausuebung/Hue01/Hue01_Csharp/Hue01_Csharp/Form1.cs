@@ -28,6 +28,7 @@ namespace Hue01_Csharp
             udpClient = new UdpClient(receiveAdr);
             this.ReceiveAsync();
             this.btReadData.Enabled = false;
+            this.nud_port.ReadOnly = true;
         }
 
         private async void ReceiveAsync()   // async bedeutet, dass die Methode im Hintergrund ausgeführt wird
@@ -38,9 +39,9 @@ namespace Hue01_Csharp
                 string value = Encoding.UTF8.GetString(result.Buffer);
                 if (value.Contains(serverIdentifier))
                 {
-                    value = value.Substring(value.IndexOf(serverIdentifier) + serverIdentifier.Length, value.IndexOf("###") - value.IndexOf(serverIdentifier) - serverIdentifier.Length);
+                    value = value.Substring(value.IndexOf(serverIdentifier) + serverIdentifier.Length, value.IndexOf("###") - value.IndexOf(serverIdentifier) - serverIdentifier.Length).Replace(".", ",");
                     this.tbCurrentTemperature.Text = value;
-                    measurments.Add(new Measurment(DateTime.Now, double.Parse(value.Replace(".", ","))));
+                    measurments.Add(new Measurment(DateTime.Now, double.Parse(value)));
                     double averageMeasurment = 0;
 
                     List<Measurment> newMeasurments = new List<Measurment>();

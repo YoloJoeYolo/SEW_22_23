@@ -13,12 +13,12 @@ static IPAddress ip(255, 255, 255, 255);
 
 
 DHT dht(DHTPIN, DHTTYPE);
-EthernetUDP Udp;
+EthernetUDP udp;
 
 void setup() {
   Ethernet.init(10);
   Ethernet.begin(mac);  // IP. Gateway, Subnet, DNS vom DHCP
-  Udp.begin(port);  
+  udp.begin(port);  
   Serial.begin(9600);
   while(!Serial){
     // warten bis der serielle Kommunikationspartner verfügbar
@@ -48,9 +48,9 @@ void loop() {
 
     Serial.println(message);
     
-    Udp.beginPacket( ip, port);
-    Udp.print(message);
-    Udp.endPacket();
+    udp.beginPacket( ip, port);
+    udp.print(message);
+    udp.endPacket();
   }
   delay(3000);
 }

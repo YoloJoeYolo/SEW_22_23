@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\johan\\source\\repos\\SEW_22_23\\Hausuebung\\Hue01\\Hue01_Csharp\\Hue01_Csharp\\Hue01_Csharp.csproj": {}
+    "C:\\Users\\johan\\Source\\Repos\\SEW_22_23\\Hausuebung\\Hue01\\Hue01_Csharp\\Hue01_Csharp\\Hue01_Csharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\johan\\source\\repos\\SEW_22_23\\Hausuebung\\Hue01\\Hue01_Csharp\\Hue01_Csharp\\Hue01_Csharp.csproj": {
+    "C:\\Users\\johan\\Source\\Repos\\SEW_22_23\\Hausuebung\\Hue01\\Hue01_Csharp\\Hue01_Csharp\\Hue01_Csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\johan\\source\\repos\\SEW_22_23\\Hausuebung\\Hue01\\Hue01_Csharp\\Hue01_Csharp\\Hue01_Csharp.csproj",
+        "projectUniqueName": "C:\\Users\\johan\\Source\\Repos\\SEW_22_23\\Hausuebung\\Hue01\\Hue01_Csharp\\Hue01_Csharp\\Hue01_Csharp.csproj",
         "projectName": "Hue01_Csharp",
-        "projectPath": "C:\\Users\\johan\\source\\repos\\SEW_22_23\\Hausuebung\\Hue01\\Hue01_Csharp\\Hue01_Csharp\\Hue01_Csharp.csproj",
+        "projectPath": "C:\\Users\\johan\\Source\\Repos\\SEW_22_23\\Hausuebung\\Hue01\\Hue01_Csharp\\Hue01_Csharp\\Hue01_Csharp.csproj",
         "packagesPath": "C:\\Users\\johan\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\johan\\Source\\Repos\\SEW_22_23\\Hausuebung\\Hue01\\Hue01_Csharp\\Hue01_Csharp\\obj\\",
         "projectStyle": "PackageReference",

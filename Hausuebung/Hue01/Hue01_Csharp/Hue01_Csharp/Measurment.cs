@@ -2,8 +2,8 @@
 {
     internal class Measurment
     {
-        public DateTime Time { get; set; }
-        public double Value { get; set; }
+        public DateTime Time { get;}
+        public double Value { get;}
 
         public Measurment(DateTime time, double value)
         {
