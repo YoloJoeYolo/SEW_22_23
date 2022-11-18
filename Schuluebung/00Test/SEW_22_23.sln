@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00Test", "00Test\00Test.csproj", "{9646F8FF-F485-4DC5-811A-09322A9EC690}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00_Test", "00Test\00_Test.csproj", "{9646F8FF-F485-4DC5-811A-09322A9EC690}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_NullableDatatypes", "..\01_NullableDatatypes\01_NullableDatatypes\01_NullableDatatypes.csproj", "{AE2430C0-FD43-4ACF-BC02-C034A0BFF40E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_CallByValueCallByReference", "02_CallByValueCallByReference\02_CallByValueCallByReference.csproj", "{88C2658A-45EF-434E-90A9-89BF6C1C0C52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_CallByValueCallByReference", "02_CallByValueCallByReference\02_CallByValueCallByReference.csproj", "{88C2658A-45EF-434E-90A9-89BF6C1C0C52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_TryParse", "03TryParse\03_TryParse.csproj", "{BF616E7F-D245-414F-A6EA-1B04E41E901E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_TryParse", "03TryParse\03_TryParse.csproj", "{BF616E7F-D245-414F-A6EA-1B04E41E901E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Enums", "04_Enums\04_Enums.csproj", "{569A8FEE-54BD-443D-814A-6CC480D2A15E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_Enums", "04_Enums\04_Enums.csproj", "{569A8FEE-54BD-443D-814A-6CC480D2A15E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Delegates", "05Delegates\05_Delegates.csproj", "{AE23E866-35B9-4C41-90C3-A280B02BFF58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Events", "06_Events\06_Events.csproj", "{DFB3A0B9-7BFE-414C-AEDE-2CF0C7D945FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{569A8FEE-54BD-443D-814A-6CC480D2A15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{569A8FEE-54BD-443D-814A-6CC480D2A15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{569A8FEE-54BD-443D-814A-6CC480D2A15E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE23E866-35B9-4C41-90C3-A280B02BFF58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE23E866-35B9-4C41-90C3-A280B02BFF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE23E866-35B9-4C41-90C3-A280B02BFF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE23E866-35B9-4C41-90C3-A280B02BFF58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFB3A0B9-7BFE-414C-AEDE-2CF0C7D945FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB3A0B9-7BFE-414C-AEDE-2CF0C7D945FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFB3A0B9-7BFE-414C-AEDE-2CF0C7D945FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFB3A0B9-7BFE-414C-AEDE-2CF0C7D945FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
