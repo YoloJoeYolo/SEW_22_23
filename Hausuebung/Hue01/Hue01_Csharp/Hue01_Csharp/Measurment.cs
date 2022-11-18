@@ -2,25 +2,13 @@
 {
     internal class Measurment
     {
-        DateTime time;
-        double value;
+        public DateTime Time { get;}
+        public double Value { get;}
 
         public Measurment(DateTime time, double value)
         {
-            this.time = time;
-            this.value = value;
-        }
-
-        public DateTime Time
-        {
-            get{return time;}
-            set{time = value;}
-        }
-
-        public Double Value
-        {
-            get{return value;}
-            set{this.value = value;}
+            this.Time = time;
+            this.Value = value;
         }
     }
 }

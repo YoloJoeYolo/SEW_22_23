@@ -1,6 +1,7 @@
 using System.Net.Sockets;
 using System.Net;
 using System.Text;
+using System.Diagnostics.Metrics;
 
 namespace Hue01_Csharp
 {
@@ -8,6 +9,8 @@ namespace Hue01_Csharp
     {
         private UdpClient udpClient;
         private List<Measurment> measurments = new List<Measurment>();
+        private String serverIdentifier = "-temperature measurement system werner-";
+        private IPEndPoint receiveAdr;
 
         public Form1()
         {
@@ -21,10 +24,11 @@ namespace Hue01_Csharp
 
         private void btReadData_Click(object sender, EventArgs e)
         {
-            IPEndPoint receiveAdr = new IPEndPoint(IPAddress.Any, int.Parse(this.nud_port.Value.ToString()));    // IP: 0.0.0.0
+            receiveAdr = new IPEndPoint(IPAddress.Any, int.Parse(this.nud_port.Value.ToString()));
             udpClient = new UdpClient(receiveAdr);
             this.ReceiveAsync();
             this.btReadData.Enabled = false;
+            this.nud_port.ReadOnly = true;
         }
 
         private async void ReceiveAsync()   // async bedeutet, dass die Methode im Hintergrund ausgeführt wird
@@ -33,22 +37,27 @@ namespace Hue01_Csharp
             {
                 UdpReceiveResult result = await udpClient.ReceiveAsync();
                 string value = Encoding.UTF8.GetString(result.Buffer);
-                this.tbCurrentTemperature.Text = value;
-                /*measurments.Add(new Measurment(DateTime.Now, double.Parse(value)));
-                double averageMeasurment = 0;
-                foreach (Measurment measurment in measurments)
+                if (value.Contains(serverIdentifier))
                 {
-                    if (measurment.Time.CompareTo(DateTime.Now.Subtract(new DateTime(0, 0, 0, 0, 5, 0)))<0)
+                    value = value.Substring(value.IndexOf(serverIdentifier) + serverIdentifier.Length, value.IndexOf("###") - value.IndexOf(serverIdentifier) - serverIdentifier.Length).Replace(".", ",");
+                    this.tbCurrentTemperature.Text = value;
+                    measurments.Add(new Measurment(DateTime.Now, double.Parse(value)));
+                    double averageMeasurment = 0;
+
+                    List<Measurment> newMeasurments = new List<Measurment>();
+                    measurments.ForEach(measurment =>
                     {
-                        measurments.Remove(measurment);
-                    }
-                    else
-                    {
-                        averageMeasurment += measurment.Value;
-                    }
+                        if (measurment.Time.CompareTo(DateTime.Now.Subtract(new TimeSpan(0, 5, 0))) > 0)
+                        {
+                            newMeasurments.Add(measurment);
+                            averageMeasurment += measurment.Value;
+                        }
+                    });
+                    measurments = newMeasurments;
+
+                    averageMeasurment = averageMeasurment/measurments.Count;
+                    this.tbAverageTemperature.Text = averageMeasurment.ToString("0.00");
                 }
-                averageMeasurment = averageMeasurment/measurments.Count;
-                this.tbAverageTemperature.Text = averageMeasurment.ToString();*/
             }
         }
     }
