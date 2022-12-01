@@ -6,11 +6,11 @@ do
     Moon.GetMoonPhase(date, ref phase);
     if (phase != MoonPhases.Newmoon)
     {
-        date.AddDays(1);
+        date = date.AddDays(1);
     }
 } while (phase != MoonPhases.Newmoon);
 
-Console.WriteLine("The next newmoon is no the: " + date.ToLongDateString());
+Console.WriteLine("The next newmoon is on the: " + date.ToLongDateString());
 
 public enum MoonPhases
 {
