@@ -1,4 +1,4 @@
-﻿using _06_Events;
+﻿ using _06_Events;
 
 Person jakob = new Person() { Name="Jakob Prem"};
 Person florian = new Person() { Name = "Florian Winkler" };
