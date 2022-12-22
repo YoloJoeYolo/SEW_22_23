@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _10_Interfaces
 {
-    internal class Coffee : IHotDrink
+    internal class Coffee : IHotDrink, IHasCaffeine
     {
         public Coffee(string type)
         {
@@ -16,6 +16,14 @@ namespace _10_Interfaces
 
         public string Type { get; }
         public int Degree { get; set; }
+
+        public float Caffeine {
+            get
+            {
+                return 40;
+            }
+                
+        }
 
         public void cool()
         {

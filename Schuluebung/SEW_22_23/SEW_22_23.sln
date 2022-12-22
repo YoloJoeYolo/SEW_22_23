@@ -29,13 +29,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MutatedVowel_1_2", "Mutated
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_NullableDatatypes", "01_NullableDatatypes\01_NullableDatatypes.csproj", "{9B18F3F7-48B7-4157-BDC9-F66EF694204D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_FuncAction", "07_FuncAction\07_FuncAction.csproj", "{8F2A160D-10CF-4B17-88D6-93D249D676C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_FuncAction", "07_FuncAction\07_FuncAction.csproj", "{8F2A160D-10CF-4B17-88D6-93D249D676C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_LambdaExpression", "08_LambdaExpression\08_LambdaExpression.csproj", "{F4D791E0-F2F3-4299-A98A-1C9F7D0D332A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_LambdaExpression", "08_LambdaExpression\08_LambdaExpression.csproj", "{F4D791E0-F2F3-4299-A98A-1C9F7D0D332A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_TimerWithLambda", "09_TimerWithLambda\09_TimerWithLambda.csproj", "{6B62317B-9C3F-43D4-8308-07FE58643FE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_TimerWithLambda", "09_TimerWithLambda\09_TimerWithLambda.csproj", "{6B62317B-9C3F-43D4-8308-07FE58643FE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_Interfaces", "10_Interfaces\10_Interfaces.csproj", "{00BDFD4C-53C0-4288-9919-B56C886BB396}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_Interfaces", "10_Interfaces\10_Interfaces.csproj", "{00BDFD4C-53C0-4288-9919-B56C886BB396}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_IComparable", "11_IComparable\11_IComparable.csproj", "{A842B562-86AE-4C02-8300-AA1E108F1EDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +105,10 @@ Global
 		{00BDFD4C-53C0-4288-9919-B56C886BB396}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00BDFD4C-53C0-4288-9919-B56C886BB396}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00BDFD4C-53C0-4288-9919-B56C886BB396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A842B562-86AE-4C02-8300-AA1E108F1EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A842B562-86AE-4C02-8300-AA1E108F1EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A842B562-86AE-4C02-8300-AA1E108F1EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A842B562-86AE-4C02-8300-AA1E108F1EDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
