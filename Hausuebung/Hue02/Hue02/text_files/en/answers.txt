@@ -1,0 +1,16 @@
+language:By the way, you can change the language by writing '#language'.
+leave:By the way, you can end our conversation by writing 'bye'.
+food:I love eating! Especially when it’s Food from a local producer.
+color:Which color is your favorite one.
+green:Did you know that green is the color of nature and live?
+car: What brand is your favorite?
+money:In my opinion, money destroys so much joy in live. Still, do you want to donate me some? ;)
+hobby:My only hobby is talking to people. What are yours?
+run:Did you know, that I can run faster than Usain Bolt! Year I know amazing.
+love:<3 <3 <3
+tired:I am so tired, maybe we should stop for a minute.
+number:Do you have a favorite number?
+red:Red is a nice color.
+99:99 seams like infinite to me.
+bot:Pst. Don't tell anyone, but I am not really a bot. My real name is Johannes.
+roboter:I like robots! They are so amazing and all the things they can do.

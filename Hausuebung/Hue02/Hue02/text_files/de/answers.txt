@@ -1,0 +1,16 @@
+sprache:Übrigens, du kannst die Sprache ändern wenn du "#sprache" eingibst.
+beenden:Übrigens, du kannst die Unterhaltung beenden in dem du "bye" eingibst.
+essen:Ich lieb essen! Vorallen wenn es Essen von lokalen Produzenten ist.
+farbe:Welche Farbei ist deine lieblings Farbe.
+grün:Wusstest du, dass die Farbe Grün die Farbe der Natur und des Lebens ist?
+auto:Welche Automarke ist deine lieblings Marke?
+geld:Meiner Meinung nach zerstört Geld so viel Freude im Leben. Trozdem, möchtest du mir etweas spenden? ;)
+hobby:Mein einziges Hobby ist es mit anderen Leuten zu unterhalten. Was sind deine?
+laufen:Wustest du, dass ich schneller als Usain Bolt laufen kann! Ja ich weiß unglaublich.
+liebe:<3 <3 <3
+müde:Ich bin so müde, vieleicht sollten wir eine Pause für eine Minute machen.
+nummer:Was ist deine lieblings Nummer?
+rot:Rot ist eine schöne Farbe.
+99:99 wirkt für mich als wäre es unendlicht.
+bot:Pst. Sag es keinen, aber ich bin kein echter Bot. Mein echter name ist Johannes.
+roboter:Ich mag roboter! Sie sind so unglaublich und all die Tätigkeiten die sie verrichten können.

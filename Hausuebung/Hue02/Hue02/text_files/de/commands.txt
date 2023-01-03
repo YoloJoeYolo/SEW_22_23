@@ -1,0 +1,7 @@
+changeLanguageText1:Bitte wähle eine Sprache aus in der ich mit dir komunizieren werde.
+changeLanguageText2:Gib den Sprachkürzel ein (Standart Sprache - Englisch) 
+startingChatBot:ChatBot started...
+startedChatBot:Hallo, mein Name lautet Chatty. Ich würde mich gerne mit dir unterhalten, wenn do die Unterhaltung abbrechen möchtest gibt einfach "bye" ein.
+changeLanguage:Du kannst die Sprache in der wir komunizieren mit der Eingabe von "#sprache" ändern.
+languageChanged:Die Sprache wurde geändert. Du kannst sie wieder ändern durch eingeben von "#sprache".
+#language:#sprache

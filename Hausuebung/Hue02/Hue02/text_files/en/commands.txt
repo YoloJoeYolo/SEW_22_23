@@ -1,0 +1,7 @@
+changeLanguageText1:Please choose a language in which I will communicate with you.
+changeLanguageText2:Enter the language shortcut (default language - English) 
+startingChatBot:Starting ChatBot...
+startedChatBot:Hey there, my name is Chatty. I would like to chat with you, if you want to end our conversation just enter 'bye'.
+changeLanguage:You can change the language in which we communicate by writing '#language'.
+languageChanged:The language got changed. You can change it again by writing'#language'.
+#language:#language
