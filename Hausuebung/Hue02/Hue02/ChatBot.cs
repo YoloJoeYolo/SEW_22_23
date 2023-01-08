@@ -68,8 +68,6 @@ namespace Hue02
             return Console.ReadLine().ToLower().Replace('.', ' ').Replace(',', ' ').Replace('-', ' ');
         }
 
-        
-
         void answerToInput()
         {
             string[] parts = input.Split(' ');
