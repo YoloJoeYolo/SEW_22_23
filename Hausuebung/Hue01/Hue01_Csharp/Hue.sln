@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hue01_Csharp", "Hue01_Csharp\Hue01_Csharp.csproj", "{EF739494-79FA-4AAA-BEDD-DF85F6A2FAA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hue02", "..\..\Hue02\Hue02\Hue02.csproj", "{758B721E-0847-48AA-A371-B6F9A58EF005}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hue02", "..\..\Hue02\Hue02\Hue02.csproj", "{758B721E-0847-48AA-A371-B6F9A58EF005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HUE03", "..\..\Hue03\HUE03\HUE03.csproj", "{2A79E1E4-D664-49FD-AE95-F8069A11FD2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{758B721E-0847-48AA-A371-B6F9A58EF005}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{758B721E-0847-48AA-A371-B6F9A58EF005}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{758B721E-0847-48AA-A371-B6F9A58EF005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A79E1E4-D664-49FD-AE95-F8069A11FD2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A79E1E4-D664-49FD-AE95-F8069A11FD2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A79E1E4-D664-49FD-AE95-F8069A11FD2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A79E1E4-D664-49FD-AE95-F8069A11FD2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
