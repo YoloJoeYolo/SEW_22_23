@@ -16,7 +16,6 @@ foreach(Uri url in urls)
     tasks.Add(t);
     //t.Wait();
 };
-
 Task.WaitAll(tasks.ToArray());  // warten bis alle Tasks fertig sind
 tasks.ForEach(task => Console.WriteLine("File can be found: " +task.Result));
 Console.WriteLine("Alle Downloads abgeschlossen!");

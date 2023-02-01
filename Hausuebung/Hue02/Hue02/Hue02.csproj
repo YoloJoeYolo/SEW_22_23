@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Hue03\HUE03\HUE03.csproj" />
+  </ItemGroup>
+
 </Project>

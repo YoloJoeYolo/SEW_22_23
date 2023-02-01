@@ -30,17 +30,22 @@
         {
             this.btnLoadFiles = new System.Windows.Forms.Button();
             this.btnSelectOutputPath = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.tbOutputPath = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbInformation = new System.Windows.Forms.TextBox();
+            this.nudParallelAnalyses = new System.Windows.Forms.NumericUpDown();
+            this.pb = new System.Windows.Forms.ProgressBar();
+            this.lbProgressBar = new System.Windows.Forms.Label();
+            this.lbNummberOfThreads = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.nudParallelAnalyses)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLoadFiles
             // 
             this.btnLoadFiles.Enabled = false;
-            this.btnLoadFiles.Location = new System.Drawing.Point(12, 12);
+            this.btnLoadFiles.Location = new System.Drawing.Point(14, 16);
+            this.btnLoadFiles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLoadFiles.Name = "btnLoadFiles";
-            this.btnLoadFiles.Size = new System.Drawing.Size(150, 40);
+            this.btnLoadFiles.Size = new System.Drawing.Size(171, 53);
             this.btnLoadFiles.TabIndex = 0;
             this.btnLoadFiles.Text = "Load Files";
             this.btnLoadFiles.UseVisualStyleBackColor = true;
@@ -48,60 +53,119 @@
             // 
             // btnSelectOutputPath
             // 
-            this.btnSelectOutputPath.Location = new System.Drawing.Point(168, 12);
+            this.btnSelectOutputPath.Location = new System.Drawing.Point(336, 16);
+            this.btnSelectOutputPath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSelectOutputPath.Name = "btnSelectOutputPath";
-            this.btnSelectOutputPath.Size = new System.Drawing.Size(150, 40);
+            this.btnSelectOutputPath.Size = new System.Drawing.Size(171, 53);
             this.btnSelectOutputPath.TabIndex = 1;
             this.btnSelectOutputPath.Text = "Select output path";
             this.btnSelectOutputPath.UseVisualStyleBackColor = true;
             this.btnSelectOutputPath.Click += new System.EventHandler(this.btnSelectOutputPath_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(324, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 15);
-            this.label2.TabIndex = 3;
-            // 
             // tbOutputPath
             // 
-            this.tbOutputPath.Location = new System.Drawing.Point(324, 12);
+            this.tbOutputPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbOutputPath.Location = new System.Drawing.Point(514, 16);
+            this.tbOutputPath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbOutputPath.Multiline = true;
             this.tbOutputPath.Name = "tbOutputPath";
             this.tbOutputPath.PlaceholderText = "Shows output path";
             this.tbOutputPath.ReadOnly = true;
             this.tbOutputPath.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.tbOutputPath.Size = new System.Drawing.Size(464, 40);
+            this.tbOutputPath.Size = new System.Drawing.Size(386, 52);
             this.tbOutputPath.TabIndex = 4;
             this.tbOutputPath.TabStop = false;
             this.tbOutputPath.WordWrap = false;
             // 
-            // textBox1
+            // tbInformation
             // 
-            this.textBox1.Location = new System.Drawing.Point(488, 58);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Shows information";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(300, 380);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TabStop = false;
-            this.textBox1.WordWrap = false;
+            this.tbInformation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbInformation.Location = new System.Drawing.Point(14, 141);
+            this.tbInformation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbInformation.Multiline = true;
+            this.tbInformation.Name = "tbInformation";
+            this.tbInformation.PlaceholderText = "Shows information";
+            this.tbInformation.ReadOnly = true;
+            this.tbInformation.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbInformation.Size = new System.Drawing.Size(884, 446);
+            this.tbInformation.TabIndex = 5;
+            this.tbInformation.TabStop = false;
+            this.tbInformation.WordWrap = false;
+            // 
+            // nudParallelAnalyses
+            // 
+            this.nudParallelAnalyses.Location = new System.Drawing.Point(193, 42);
+            this.nudParallelAnalyses.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.nudParallelAnalyses.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.nudParallelAnalyses.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudParallelAnalyses.Name = "nudParallelAnalyses";
+            this.nudParallelAnalyses.Size = new System.Drawing.Size(137, 27);
+            this.nudParallelAnalyses.TabIndex = 6;
+            this.nudParallelAnalyses.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // pb
+            // 
+            this.pb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pb.ForeColor = System.Drawing.Color.Lime;
+            this.pb.Location = new System.Drawing.Point(14, 105);
+            this.pb.Name = "pb";
+            this.pb.Size = new System.Drawing.Size(886, 29);
+            this.pb.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.pb.TabIndex = 7;
+            // 
+            // lbProgressBar
+            // 
+            this.lbProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbProgressBar.BackColor = System.Drawing.Color.Transparent;
+            this.lbProgressBar.Location = new System.Drawing.Point(14, 73);
+            this.lbProgressBar.Name = "lbProgressBar";
+            this.lbProgressBar.Size = new System.Drawing.Size(886, 29);
+            this.lbProgressBar.TabIndex = 8;
+            this.lbProgressBar.Text = "No files have been selected yet";
+            this.lbProgressBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbNummberOfThreads
+            // 
+            this.lbNummberOfThreads.AutoSize = true;
+            this.lbNummberOfThreads.Location = new System.Drawing.Point(193, 19);
+            this.lbNummberOfThreads.Name = "lbNummberOfThreads";
+            this.lbNummberOfThreads.Size = new System.Drawing.Size(116, 20);
+            this.lbNummberOfThreads.TabIndex = 9;
+            this.lbNummberOfThreads.Text = "Parallel analyses";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(914, 600);
+            this.Controls.Add(this.lbNummberOfThreads);
+            this.Controls.Add(this.lbProgressBar);
+            this.Controls.Add(this.pb);
+            this.Controls.Add(this.nudParallelAnalyses);
+            this.Controls.Add(this.tbInformation);
             this.Controls.Add(this.tbOutputPath);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSelectOutputPath);
             this.Controls.Add(this.btnLoadFiles);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "frequency analysis";
+            ((System.ComponentModel.ISupportInitialize)(this.nudParallelAnalyses)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,8 +175,11 @@
 
         private Button btnLoadFiles;
         private Button btnSelectOutputPath;
-        private Label label2;
         private TextBox tbOutputPath;
-        private TextBox textBox1;
+        private TextBox tbInformation;
+        private NumericUpDown nudParallelAnalyses;
+        private ProgressBar pb;
+        private Label lbProgressBar;
+        private Label lbNummberOfThreads;
     }
 }
