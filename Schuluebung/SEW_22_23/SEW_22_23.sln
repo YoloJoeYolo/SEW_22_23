@@ -45,9 +45,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13_FirstWebApp", "13_FirstW
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test2", "Test2", "{255D37CC-4C73-4B79-B642-F0C605EFDA16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IShape_2_1", "IShape_2_1\IShape_2_1.csproj", "{55408D5E-35B3-4E02-BC28-A40AB8163BBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IShape_2_1", "IShape_2_1\IShape_2_1.csproj", "{55408D5E-35B3-4E02-BC28-A40AB8163BBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumbers_2_2", "PrimeNumbers_2_2\PrimeNumbers_2_2.csproj", "{CEE29FAB-CA0A-4A93-B9D3-A1D83B6D3BB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeNumbers_2_2", "PrimeNumbers_2_2\PrimeNumbers_2_2.csproj", "{CEE29FAB-CA0A-4A93-B9D3-A1D83B6D3BB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00_Async", "00_Async\00_Async.csproj", "{2DECFD18-48A0-4FCB-9D2E-0C7C7FC2E31B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{CEE29FAB-CA0A-4A93-B9D3-A1D83B6D3BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEE29FAB-CA0A-4A93-B9D3-A1D83B6D3BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEE29FAB-CA0A-4A93-B9D3-A1D83B6D3BB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DECFD18-48A0-4FCB-9D2E-0C7C7FC2E31B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DECFD18-48A0-4FCB-9D2E-0C7C7FC2E31B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DECFD18-48A0-4FCB-9D2E-0C7C7FC2E31B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DECFD18-48A0-4FCB-9D2E-0C7C7FC2E31B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
