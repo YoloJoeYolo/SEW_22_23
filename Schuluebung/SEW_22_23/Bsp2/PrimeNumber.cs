@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bsp2
+namespace PrimeFactors
 {
     public class PrimeNumber
     {

@@ -1,4 +1,4 @@
-﻿using Bsp1;
+﻿using IArticle;
 
 List<IArticle> articles = new List<IArticle>();
 

@@ -1,4 +1,4 @@
-﻿using Bsp2;
+﻿using PrimeFactors;
 
 PrimeNumber primeNumber1 = new PrimeNumber();
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bsp1
+namespace IArticle
 {
     internal interface IArticle
     {
