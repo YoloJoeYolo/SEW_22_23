@@ -11,4 +11,4 @@ double sum = 0;
 
 articles.ForEach(item => sum += item.Price);
 
-Console.WriteLine("Die Summe beträgt: " + sum);
+Console.WriteLine("Die Summe beträgt: " + Math.Round(sum, 2));
