@@ -1,7 +1,17 @@
 ﻿using Bsp2;
 
-PrimeNumber primeNumber = new PrimeNumber();
+PrimeNumber primeNumber1 = new PrimeNumber();
 
-primeNumber.PrimeFactorFound += (number) => Console.WriteLine("Es wurde eine Primfaktor gefunden: " +number);
+primeNumber1.PrimeFactorFound += printPrimFaktor;
 
-primeNumber.GeneratePrimeFactorsAsync(275);
+primeNumber1.GeneratePrimeFactorsAsync(275);
+
+PrimeNumber primeNumber2 = new PrimeNumber();
+
+primeNumber2.PrimeFactorFound += (number) => Console.WriteLine("Es wurde eine Primfaktor gefunden: " +number);
+
+primeNumber2.GeneratePrimeFactorsAsync(275);
+
+void printPrimFaktor(int number){
+    Console.WriteLine("Es wurde eine Primfaktor gefunden: " + number);
+}
