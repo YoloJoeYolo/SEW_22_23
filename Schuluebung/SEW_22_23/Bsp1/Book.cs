@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IArticle
+namespace IArticle_2_1
 {
     internal class Book : IArticle
     {

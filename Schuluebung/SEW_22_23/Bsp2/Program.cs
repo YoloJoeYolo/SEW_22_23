@@ -1,4 +1,4 @@
-﻿using PrimeFactors;
+﻿using PrimeFactors_2_2;
 
 PrimeNumber primeNumber1 = new PrimeNumber();
 

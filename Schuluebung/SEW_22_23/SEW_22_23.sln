@@ -53,9 +53,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00_Async", "00_Async\00_Asy
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test2_2", "Test2_2", "{177936AD-38A4-465C-B6B8-19302754D43F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IArticle", "Bsp1\IArticle.csproj", "{1EA868AE-541C-4A73-9891-BCF5B10B30A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IArticle_2_1", "Bsp1\IArticle_2_1.csproj", "{1EA868AE-541C-4A73-9891-BCF5B10B30A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactors", "Bsp2\PrimeFactors.csproj", "{93266C9E-BA17-4282-8062-705354B3989C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactors_2_2", "Bsp2\PrimeFactors_2_2.csproj", "{93266C9E-BA17-4282-8062-705354B3989C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
