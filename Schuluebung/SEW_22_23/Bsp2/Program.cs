@@ -2,6 +2,6 @@
 
 PrimeNumber primeNumber = new PrimeNumber();
 
-primeNumber.PrimeFactorFound += (number) => Console.WriteLine("Es wurde eine Primzahl gefunden: " +number);
+primeNumber.PrimeFactorFound += (number) => Console.WriteLine("Es wurde eine Primfaktor gefunden: " +number);
 
 primeNumber.GeneratePrimeFactorsAsync(275);
