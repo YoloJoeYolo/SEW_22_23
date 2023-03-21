@@ -1,0 +1,36 @@
+﻿@page
+@model _14_SecondWebApp.Pages.AdditionModel
+@{
+}
+
+<div class="container-md">
+	<div class="row">
+		<div class="col-md-6">
+			<form method="post" asp-page-handler="Calculate">
+				<div>
+					<input type="number" id="summand1" name="summand1" />
+					<input type="number" id="summand2" name="summand2" />
+				</div>
+				<button type="submit">Ergebnis auf gleicher Seite anzeigen</button>
+
+			</form>
+
+			@if (Model.Result.HasValue)
+			{
+				<p>Ergebnis: @Model.Calculation</p>
+			}
+		</div>
+
+		<div class="col-md-6">
+			<form method="post" asp-page-handler="CalculateAndRedirect">
+				<div>
+					<input type="number" id="summand1" name="summand1" />
+					<input type="number" id="summand2" name="summand2" />
+				</div>
+				<button type="submit">Ergebnis auf anderer Seite anzeigen</button>
+
+			</form>
+
+		</div>
+	</div>
+</div>
