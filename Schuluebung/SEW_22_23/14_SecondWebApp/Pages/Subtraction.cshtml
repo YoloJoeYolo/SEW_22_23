@@ -2,3 +2,20 @@
 @model _14_SecondWebApp.Pages.SubtractionModel
 @{
 }
+
+
+
+<div class="container-md">
+		<div class="col-md-6">
+			<form method="post" asp-page-handler="CalculateAndRedirect">
+				<div>
+				<input type="number" id="minuend" name="minuend" />
+				<input type="number" id="subtrahend" name="subtrahend" />
+				</div>
+				<button type="submit">Ergebnis auf anderer Seite anzeigen</button>
+
+			</form>
+
+		</div>
+	</div>
+</div>
