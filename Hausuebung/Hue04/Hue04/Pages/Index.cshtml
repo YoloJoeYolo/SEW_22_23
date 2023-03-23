@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome!</h1>
+    
+    <img src=@Model.Image style="width:100%; max-width:720px;" />
+    <p></p>
+    <div class="row">
+        <button class="col-3 text-lg-start">
+            <a class="nav-link text-dark" asp-area="" asp-page="/RandomValue" asp-route-min=0 asp-route-max=10>Random Number between 0 and 10</a>
+        </button>
+        <button class="col-3 text-lg-start">
+            <a class="nav-link text-dark" asp-area="" asp-page="/RandomValue" asp-route-min=0 asp-route-max=100>Random Number between 0 and 100</a>
+        </button>
+        <button class="col-3 text-lg-start">
+            <a class="nav-link text-dark" asp-area="" asp-page="/RandomValue" asp-route-min=0 asp-route-max=1000>Random Number between 0 and 1000</a>
+        </button>
+        <button class="col-3 text-lg-start">
+            <a class="nav-link text-dark" asp-area="" asp-page="/RandomValue" asp-route-min=-10 asp-route-max=10>Random Number between -10 and 10</a>
+        </button>
+    </div>
+</div>

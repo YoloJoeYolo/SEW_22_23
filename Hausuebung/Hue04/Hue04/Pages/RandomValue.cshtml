@@ -1,0 +1,26 @@
+﻿@page
+@model Hue04.Pages.RandomValueModel
+@{
+	ViewData["Title"] = "Generate Random Value";
+}
+
+<div class="container-md text-center">
+	<h1 class="display-4">Random Number Generator</h1>
+	<form method="post" asp-page-handler="GenerateRandomValue">
+		<div class="row">
+			<div class="col-6">
+				Min:
+				<input type="number" id="min" name="min" value="@Model.Min"/>
+			</div>
+			<div class="col-6">
+				Max:
+				<input type="number" id="max" name="max" value="@Model.Max"/>
+			</div>
+		</div>
+		<br/>
+			<button type="submit">Generate random value</button>
+	</form>
+	<div class="row">
+		<p><h2 class="display-6">Random number: @Model.Result</h2></p>
+	</div>
+</div>

@@ -1,0 +1,42 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+button {
+    background: transparent;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+}
+
+    button:hover {
+        background-color: #ebebeb;
+        border-color: grey;
+    }
+
+nav button{
+    border-color: transparent;
+    border-radius: 0px;
+    border-top: none;
+    border-bottom: none;
+}
+
+    nav button:hover {
+        border-color: grey;
+        background-color: transparent;
+    } 
+
