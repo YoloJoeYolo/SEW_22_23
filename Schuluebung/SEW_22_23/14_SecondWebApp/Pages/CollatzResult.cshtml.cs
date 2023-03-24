@@ -5,8 +5,12 @@ namespace _14_SecondWebApp.Pages
 {
     public class CollatzResultModel : PageModel
     {
-        public void OnGet()
+        public string Result { get; set; }
+        public string Source { get; set; }
+        public void OnGet(string result, string source)
         {
+            Result = result;
+            Source = source;
         }
     }
 }
