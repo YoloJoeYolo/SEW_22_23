@@ -1,0 +1,7 @@
+﻿.landingPic 
+{
+    background-color: red;
+}
+@@media (max-width: 991.98px) @include media-breakpoint-up(md) {
+    background-color: blue;
+}
