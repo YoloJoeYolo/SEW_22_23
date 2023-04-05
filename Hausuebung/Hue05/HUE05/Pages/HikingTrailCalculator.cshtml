@@ -3,5 +3,27 @@
 @{
 }
 <div class="text-center">
-    <h1 class="display-4">Wanderweg Rechner</h1>
+    <h1 class="display-4">Wanderweg Rechner</h1><br />
+    <h4>Berechnen Sie schnell und einfach die Wanderzeit Ihrer Bergtour.</h4><br />
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <form method="post" asp-page-handler="CalculatHikingTime">
+                <label>Entfernung (horizontale Entfernung/Luftlinie) in Meter</label>
+                <input type="number" class="form-control" name="distance" min="0" value="@Model.Distance"/>
+                <br />
+                <label>Höhenmeter Aufstieg (gesammt) in Meter</label>
+                <input type="number" class="form-control" name="altitudeGain" min="0" value="@Model.AltitudeGain" />
+                <br />
+                <label>Höhenmeter Abstieg (gesammt) in Meter</label>
+                <input type="number" class="form-control" name="altitudeLoss" min="0" value="@Model.AltitudeLoss" />
+                <br />
+                <button class="btn btn-secondary btn-lg active" type="submit">Wanderzeit berechnen</button>
+            </form>
+    </div>
+    <div class="col-4 m-2"></div>
+        @if (Model.Result != "null"){
+            <h2 class="display-6">Wanderzeit: @Model.Result</h2>
+        }
+    </div>
 </div>

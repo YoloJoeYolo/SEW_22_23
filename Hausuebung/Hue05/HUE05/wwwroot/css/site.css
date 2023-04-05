@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
@@ -14,5 +14,23 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
+
+.strokeme {
+    color: white;
+    background-color: black;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+nav button {
+    border-color: transparent;
+    border-radius: 0px;
+    border-top: none;
+    border-bottom: none;
+}
+
+nav button:hover {
+    border-color: grey;
+    background-color: transparent;
+} 

@@ -1,7 +1,12 @@
-﻿.landingPic 
-{
-    background-color: red;
+﻿.landingPic {
+    background-image: urL('../img/landing_pic.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5em 0em;
 }
-@@media (max-width: 991.98px) @include media-breakpoint-up(md) {
-    background-color: blue;
+
+@media (min-width: 1400px) {
+    .landingPic {
+        background-image: url('../img/landing_pic_xxl.jpeg');
+    }
 }
