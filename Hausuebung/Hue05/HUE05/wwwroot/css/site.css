@@ -28,9 +28,9 @@ nav button {
     border-radius: 0px;
     border-top: none;
     border-bottom: none;
+    background-color: transparent;a
 }
 
 nav button:hover {
     border-color: grey;
-    background-color: transparent;
 } 
