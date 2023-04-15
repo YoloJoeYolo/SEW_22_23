@@ -16,7 +16,7 @@ namespace HUE05.Pages
             SetValues(distance, altitudeGain, altitudeLoss, result);
         }
 
-
+        [HttpPost]
         public void OnPostCalculatHikingTime(int? distance, int? altitudeGain, int? altitudeLoss)
         {
             SetValues(distance, altitudeGain, altitudeLoss);
