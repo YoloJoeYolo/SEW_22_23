@@ -1,0 +1,42 @@
+﻿@{
+
+}
+@model FarmerModel
+
+<h1>Hier bist du auf der Index-Seite vom Farmer</h1>
+
+<div class="container-xl">
+	<div class="row">
+		<div class="col-xl-6">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>
+							FirstName
+						</th>
+						<th>
+							LastName
+						</th>
+						<th>
+							Address
+						</th>
+						<th>
+							Birthday
+						</th>
+					</tr>
+				</thead>
+				@foreach (Farmer f in Model.Farmers)
+				{
+					<tr>
+						<td>@f.FirstName</td>
+						<td>@f.LastName</td>
+						<td>@f.Address</td>
+						<td>@f.Birthday.ToShortDateString()</td>
+					</tr>
+				}
+			</table>
+		</div>
+	</div>
+</div>
+
+<a class="nav-link text-dark" asp-area="" asp-controller="Farmer" asp-action="Detail">Farmer-Detail</a>
