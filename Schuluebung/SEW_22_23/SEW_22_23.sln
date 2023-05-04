@@ -59,7 +59,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeFactors_2_2", "Bsp2\Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14_SecondWebApp", "14_SecondWebApp\14_SecondWebApp.csproj", "{55102445-A5BA-4780-B730-61612A0CF793}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_FirstWebAppMVC", "15_FirstWebAppMVC\15_FirstWebAppMVC.csproj", "{9B71F67F-9615-4A0F-ACE7-3D3F01284DB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15_FirstWebAppMVC", "15_FirstWebAppMVC\15_FirstWebAppMVC.csproj", "{9B71F67F-9615-4A0F-ACE7-3D3F01284DB0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "17_FarmerDB", "17_FarmerDB\17_FarmerDB.csproj", "{71A6B4B8-525D-49C0-B203-6E697CBE9FB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18_FarmerWeb", "18_FarmerWeb\18_FarmerWeb.csproj", "{6CBDB3E3-76AA-44CA-B25B-8FC8970F0BAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -167,6 +171,14 @@ Global
 		{9B71F67F-9615-4A0F-ACE7-3D3F01284DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B71F67F-9615-4A0F-ACE7-3D3F01284DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B71F67F-9615-4A0F-ACE7-3D3F01284DB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71A6B4B8-525D-49C0-B203-6E697CBE9FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A6B4B8-525D-49C0-B203-6E697CBE9FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A6B4B8-525D-49C0-B203-6E697CBE9FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A6B4B8-525D-49C0-B203-6E697CBE9FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CBDB3E3-76AA-44CA-B25B-8FC8970F0BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CBDB3E3-76AA-44CA-B25B-8FC8970F0BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CBDB3E3-76AA-44CA-B25B-8FC8970F0BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CBDB3E3-76AA-44CA-B25B-8FC8970F0BAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
