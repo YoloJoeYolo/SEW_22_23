@@ -1,7 +1,13 @@
+using FarmerShared;
+using NorthwindShared;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<FirstSqliteContext>();    // Anbindung an die DB
+builder.Services.AddDbContext<NorthwindContext>();
 
 var app = builder.Build();
 

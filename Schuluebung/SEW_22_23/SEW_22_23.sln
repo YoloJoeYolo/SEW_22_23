@@ -63,7 +63,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15_FirstWebAppMVC", "15_Fir
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "17_FarmerDB", "17_FarmerDB\17_FarmerDB.csproj", "{71A6B4B8-525D-49C0-B203-6E697CBE9FB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18_FarmerWeb", "18_FarmerWeb\18_FarmerWeb.csproj", "{6CBDB3E3-76AA-44CA-B25B-8FC8970F0BAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18_FarmerWeb", "18_FarmerWeb\18_FarmerWeb.csproj", "{6CBDB3E3-76AA-44CA-B25B-8FC8970F0BAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19_NorthwindDB", "19_NorthwindDB\19_NorthwindDB.csproj", "{987F297C-97E8-4920-8E7F-5C69D1324E81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -179,6 +181,10 @@ Global
 		{6CBDB3E3-76AA-44CA-B25B-8FC8970F0BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CBDB3E3-76AA-44CA-B25B-8FC8970F0BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CBDB3E3-76AA-44CA-B25B-8FC8970F0BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987F297C-97E8-4920-8E7F-5C69D1324E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987F297C-97E8-4920-8E7F-5C69D1324E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987F297C-97E8-4920-8E7F-5C69D1324E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987F297C-97E8-4920-8E7F-5C69D1324E81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

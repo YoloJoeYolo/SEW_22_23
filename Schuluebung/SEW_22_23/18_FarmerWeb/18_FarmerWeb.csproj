@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\17_FarmerDB\17_FarmerDB.csproj" />
+    <ProjectReference Include="..\19_NorthwindDB\19_NorthwindDB.csproj" />
   </ItemGroup>
 
 </Project>
