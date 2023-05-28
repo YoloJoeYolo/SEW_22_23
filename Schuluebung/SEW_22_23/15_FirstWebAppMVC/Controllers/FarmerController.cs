@@ -19,9 +19,20 @@ namespace _15_FirstWebAppMVC.Controllers
 			return View(model);
 		}
 
-		public IActionResult Detail()
+		public IActionResult Detail(int id)
 		{
-			return View();
+			Farmer f = model.Farmers.Where(farmer => farmer.Id == id).FirstOrDefault();
+			return View(f);
+		}
+
+		[HttpPost]
+		public IActionResult Edit(int id, Farmer f)	// Databomdomg auf das Objekt f mit den Post-Daten
+		{
+			Farmer toEdit = model.Farmers.Where(farmer => farmer.Id == id).FirstOrDefault();
+
+			// den Farmer toEdit mit den aktuellen Daten vom Browser (f) updaten.
+
+            return RedirectToAction("Index");
 		}
 	}
 }
