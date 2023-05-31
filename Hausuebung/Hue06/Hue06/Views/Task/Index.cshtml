@@ -1,15 +1,16 @@
 ﻿@model IEnumerable<ToDoShared.Task>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "ToDo-List";
 }
-
-<h1>Index</h1>
+<div class="container">
+    <h1>ToDo-List</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-primary text-white" asp-action="Create">Create New</a>
 </p>
-<table id="tabletasks" class="table">
+</div>
+<table id="TableTasks" class="table">
     <thead>
         <tr>
             <th>
@@ -55,9 +56,9 @@
                 @Html.DisplayFor(modelItem => item.StatusNavigation.Status1)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="btn btn-success" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a class="btn btn-secondary" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }

@@ -4,7 +4,20 @@
 // Write your JavaScript code.
 
 $(document).ready(function () {
-    $('#tabletasks').DataTable({
+    $('#TableTasks').DataTable({
+        "columnDefs": [
+            { orderable: false, targets: 6 }
+        ],
+        "scrolly": "450px",
+        "scrollcollapse": true,
+        "paging": true
+    });
+});
+$(document).ready(function () {
+    $('#TablePriorities').DataTable({
+        "columnDefs": [
+            { orderable: false, targets: 1 }
+        ],
         "scrolly": "450px",
         "scrollcollapse": true,
         "paging": true

@@ -2,7 +2,9 @@
 
 @{
     ViewData["Title"] = "Create";
+    string dateOfToday = String.Format("{0}-{1}-{2}",DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
 }
+<div class="container">
 
 <h1>Create</h1>
 
@@ -24,7 +26,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="CreationDate" class="control-label"></label>
-                <input asp-for="CreationDate" class="form-control" />
+                    <input asp-for="CreationDate" class="form-control" value=@dateOfToday />
                 <span asp-validation-for="CreationDate" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -39,18 +41,16 @@
             <div class="form-group">
                 <label asp-for="Status" class="control-label"></label>
                 <select asp-for="Status" class ="form-control" asp-items="ViewBag.Status"></select>
-            </div>
+            </div><br/>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
+                <input type="submit" value="Create" class="btn btn-primary text-white" />
+            </div><br />
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+<a class="btn btn-info text-white" asp-action="Index">Back to List</a>
 </div>
-
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
