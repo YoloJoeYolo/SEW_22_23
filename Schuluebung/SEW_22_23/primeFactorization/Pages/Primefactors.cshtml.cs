@@ -16,13 +16,17 @@ namespace Test301primeFactorization.Pages
 
         private string CalculatePrimefactors(int number)
         {
+            if (number < 2) {
+                return number.ToString();
+            }
+
             string solution = "";
-			while (number > 1 && number % 2 == 0) {
+			while (number % 2 == 0) {
                 solution += " * 2";
                 number /= 2;
             }
             int factor = 3;
-            while (number > 2) { 
+            while (factor <= number) { 
                 if(number % factor == 0) {
                     solution += " * " +factor.ToString();
                     number /= factor;

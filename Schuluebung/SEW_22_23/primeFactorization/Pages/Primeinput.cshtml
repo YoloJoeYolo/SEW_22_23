@@ -1,0 +1,14 @@
+﻿@page
+@model Test301primeFactorization.Pages.PrimeinputModel
+@{
+}
+<form method="post" asp-page-handler="CalculatePrimefactors">
+	<div class="row">
+		<div class="col-6">
+			Number:
+			<input type="number" id="number" name="number" value="0" />
+		</div>
+	</div>
+	<br />
+	<button type="submit">Calculate primefactors</button>
+</form>
