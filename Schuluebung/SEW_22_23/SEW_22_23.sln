@@ -65,7 +65,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "17_FarmerDB", "17_FarmerDB\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18_FarmerWeb", "18_FarmerWeb\18_FarmerWeb.csproj", "{6CBDB3E3-76AA-44CA-B25B-8FC8970F0BAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19_NorthwindDB", "19_NorthwindDB\19_NorthwindDB.csproj", "{987F297C-97E8-4920-8E7F-5C69D1324E81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "19_NorthwindDB", "19_NorthwindDB\19_NorthwindDB.csproj", "{987F297C-97E8-4920-8E7F-5C69D1324E81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test3", "Test3", "{A151AE34-B519-4709-A230-7B0EF3ACD447}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
