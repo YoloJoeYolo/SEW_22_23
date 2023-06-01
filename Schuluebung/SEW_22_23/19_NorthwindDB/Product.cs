@@ -33,6 +33,7 @@ public partial class Product
     public decimal? UnitPrice { get; set; }
 
     [Column(TypeName = "smallint")]
+    [Range(0, 20, ErrorMessage = "Value must be between 0 and 20.")]
     public long? UnitsInStock { get; set; }
 
     [Column(TypeName = "smallint")]
