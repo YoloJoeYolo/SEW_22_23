@@ -69,9 +69,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "19_NorthwindDB", "19_Northw
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test3", "Test3", "{A151AE34-B519-4709-A230-7B0EF3ACD447}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test301primeFactorization", "primeFactorization\Test301primeFactorization.csproj", "{A94A424E-4C61-427D-9757-24349932FF7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test301primeFactorization", "primeFactorization\Test301primeFactorization.csproj", "{A94A424E-4C61-427D-9757-24349932FF7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test302_ChinookDB", "Test302_ChinookDB\Test302_ChinookDB.csproj", "{2A181FBD-BBB0-4AAB-99F6-2DC929E5CE04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test302_ChinookDB", "Test302_ChinookDB\Test302_ChinookDB.csproj", "{2A181FBD-BBB0-4AAB-99F6-2DC929E5CE04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test3_gr1", "Test3_gr1", "{46CC8FE8-B06F-4A7A-87DD-5509517EBC65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "schooldataDB", "schooldataDB\schooldataDB.csproj", "{432E200C-26E7-4BF2-B591-B8E2F79EE626}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -199,6 +203,10 @@ Global
 		{2A181FBD-BBB0-4AAB-99F6-2DC929E5CE04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A181FBD-BBB0-4AAB-99F6-2DC929E5CE04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A181FBD-BBB0-4AAB-99F6-2DC929E5CE04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{432E200C-26E7-4BF2-B591-B8E2F79EE626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{432E200C-26E7-4BF2-B591-B8E2F79EE626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{432E200C-26E7-4BF2-B591-B8E2F79EE626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{432E200C-26E7-4BF2-B591-B8E2F79EE626}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -214,6 +222,7 @@ Global
 		{93266C9E-BA17-4282-8062-705354B3989C} = {177936AD-38A4-465C-B6B8-19302754D43F}
 		{A94A424E-4C61-427D-9757-24349932FF7F} = {A151AE34-B519-4709-A230-7B0EF3ACD447}
 		{2A181FBD-BBB0-4AAB-99F6-2DC929E5CE04} = {A151AE34-B519-4709-A230-7B0EF3ACD447}
+		{432E200C-26E7-4BF2-B591-B8E2F79EE626} = {46CC8FE8-B06F-4A7A-87DD-5509517EBC65}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {922582F4-BF09-4D2D-BF4D-3189A207658C}
