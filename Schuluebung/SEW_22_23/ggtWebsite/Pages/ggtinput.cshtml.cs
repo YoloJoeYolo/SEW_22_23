@@ -8,5 +8,11 @@ namespace ggtWebsite.Pages
         public void OnGet()
         {
         }
-    }
+
+		[HttpPost]
+		public IActionResult OnPostGGT(int number1, int number2)
+		{
+			return RedirectToPage("ggtcalculator", new { number1 = number1, number2 = number2 });
+		}
+	}
 }
