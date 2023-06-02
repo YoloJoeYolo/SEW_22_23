@@ -10,7 +10,7 @@ namespace ggtWebsite.Pages
         }
 
 		[HttpPost]
-		public IActionResult OnPostGGT(int number1, int number2)
+		public IActionResult OnPostCalculateGGT(int number1, int number2)
 		{
 			return RedirectToPage("ggtcalculator", new { number1 = number1, number2 = number2 });
 		}
