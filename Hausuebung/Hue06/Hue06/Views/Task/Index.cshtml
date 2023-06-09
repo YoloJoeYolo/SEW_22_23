@@ -49,12 +49,36 @@
             <td>
                 @Html.DisplayFor(modelItem => item.DueDate)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PriorityNavigation.Priority1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StatusNavigation.Status1)
-            </td>
+            @if (item.PriorityNavigation.Priority1 == "Low")
+            {
+                    <td style="background-color:#a0c460;">
+                    @Html.DisplayFor(modelItem => item.PriorityNavigation.Priority1)
+                </td>
+            }
+            @if (item.PriorityNavigation.Priority1 == "Medium")
+            {
+                    <td style="background-color:#ffc55f;">
+                    @Html.DisplayFor(modelItem => item.PriorityNavigation.Priority1)
+                </td>
+            }
+            @if (item.PriorityNavigation.Priority1 == "High")
+            {
+                <td style="background-color:#ffa360;">
+                    @Html.DisplayFor(modelItem => item.PriorityNavigation.Priority1)
+                </td>
+            }
+                @if (item.StatusNavigation.Status1 == "Completete")
+            {
+                    <td style="background-color:#79c943;">
+                    @Html.DisplayFor(modelItem => item.StatusNavigation.Status1)
+                </td>
+            }
+                @if (item.StatusNavigation.Status1 != "Completete")
+            {
+                <td>
+                    @Html.DisplayFor(modelItem => item.StatusNavigation.Status1)
+                </td>
+            }
             <td>
                 <a class="btn btn-success" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a class="btn btn-secondary" asp-action="Details" asp-route-id="@item.Id">Details</a> |
