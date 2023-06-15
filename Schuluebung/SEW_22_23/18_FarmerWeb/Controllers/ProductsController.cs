@@ -71,6 +71,57 @@ namespace _18_FarmerWeb.Controllers
             return View(product);
         }
 
+        // GET: Products/CreateRandomProducts
+        public async Task<IActionResult> CreateRandomProducts()
+        {
+            for(int i = 0; i < 5; i++)
+            {
+				Product newProduct = new Product();
+                newProduct.ProductId = _context.Products.Max(XmlConfigurationExtensions => XmlConfigurationExtensions.ProductId) + 1;
+                newProduct.ProductName = CreateRandomString(15, true);
+                newProduct.Discontinued = true;
+                newProduct.UnitPrice = CreateRandomInt(100);
+                newProduct.CategoryId = _context.Categories.ToArray()[CreateRandomInt(_context.Categories.Count())].CategoryId;
+                newProduct.QuantityPerUnit = CreateRandomString(2, false);
+                newProduct.ReorderLevel = CreateRandomInt(10);
+                newProduct.SupplierId = _context.Suppliers.ToArray()[CreateRandomInt(_context.Suppliers.Count())].SupplierId;
+				newProduct.UnitsInStock = CreateRandomInt(5);
+                newProduct.UnitsOnOrder = 0;
+                _context.Products.Add(newProduct);
+				await _context.SaveChangesAsync();
+			}
+
+			var northwindContext = _context.Products.Include(p => p.Category).Include(p => p.Supplier);
+			return View("Index", await northwindContext.ToListAsync()); // Wir bleiben auf dem Index
+		}
+
+        private string CreateRandomString(int length, bool startCapitalized)
+        {
+            if(length <= 0)
+            {
+                return string.Empty;
+            }
+            string alphabet = "abcdefghijklmnopqrstuvwxyz";
+            Random random = new Random();
+            string retString = string.Empty;
+            if (startCapitalized)
+            {
+				retString += alphabet.ToUpper()[random.Next(alphabet.Length)];
+                length--;
+            }
+            for(int i = 0; i < length; i++)
+            {
+                retString += alphabet[random.Next(alphabet.Length)];
+            }
+            return retString;
+        }
+
+        private int CreateRandomInt(int maxInt)
+        {
+            Random random = new Random();
+            return random.Next(maxInt);
+        }
+
         // GET: Products/Edit/5
         public async Task<IActionResult> Edit(long? id)
         {
