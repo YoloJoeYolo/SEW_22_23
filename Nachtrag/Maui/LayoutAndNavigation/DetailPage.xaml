@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutAndNavigation.DetailPage"
+             Title="DetailPage">
+    <FlexLayout Direction="Row"
+                Wrap="Wrap"
+                AlignItems="Start">
+        <Frame BorderColor="Black"
+               WidthRequest="300">
+            <StackLayout>
+                <Label Text="Zelle 0"></Label>
+                <Label x:Name="lbX"></Label>
+                <Label x:Name="lbY"></Label>
+                <Label x:Name="lbZ"></Label>
+            </StackLayout>
+        </Frame>
+        <Frame BorderColor="Black"
+       WidthRequest="300">
+            <StackLayout>
+                <Label Text="Zelle 1"></Label>
+            </StackLayout>
+        </Frame>
+        <Frame BorderColor="Black"
+       WidthRequest="300">
+            <StackLayout>
+                <Label Text="Zelle 2"></Label>
+            </StackLayout>
+        </Frame>
+        <Frame BorderColor="Black"
+       WidthRequest="300">
+            <StackLayout>
+                <Label Text="Zelle 3"></Label>
+            </StackLayout>
+        </Frame>
+        <Frame BorderColor="Black"
+       WidthRequest="300">
+            <StackLayout>
+                <Label Text="Zelle 4"></Label>
+                <Button Text="Zurück"
+                        Clicked="Button_Clicked"></Button>
+            </StackLayout>
+        </Frame>
+    </FlexLayout>
+</ContentPage>

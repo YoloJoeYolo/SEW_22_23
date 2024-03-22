@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutAndNavigation.MainPage">
+
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="300"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Frame BorderColor="Black"
+                Grid.Row="0"
+                Grid.Column="0">
+                <StackLayout>
+                    <Label Text="Zelle 0,0"></Label>
+                </StackLayout>
+            </Frame>
+            <Frame BorderColor="Blue"
+                Grid.Row="0"
+                Grid.Column="1">
+                <StackLayout>
+                    <Label Text="Zelle 0,1"></Label>
+                </StackLayout>
+            </Frame>
+            <Frame BorderColor="Green"
+                Grid.Row="1"
+                Grid.Column="0">
+                <StackLayout>
+                    <Label Text="Zelle 1,0"></Label>
+                </StackLayout>
+            </Frame>
+            <Frame BorderColor="Red"
+                Grid.Row="1"
+                Grid.Column="1">
+                <StackLayout>
+                    <Label Text="Zelle 1,1"></Label>
+                    <Button Text="Details"
+                            Clicked="Button_Clicked"></Button>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
